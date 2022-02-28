@@ -1,0 +1,19 @@
+@media print {
+  .p-gutter {
+    padding: 0 !important;
+  }
+  .card {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+}
+
+.table td {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+.bg-light {
+  background: #fafafa;
+}
+/*# sourceMappingURL=bc-report.component.css.map */

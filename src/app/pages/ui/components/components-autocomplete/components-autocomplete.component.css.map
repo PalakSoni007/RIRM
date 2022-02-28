@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "components-autocomplete.component.scss"
+    ],
+    "names": [],
+    "file": "components-autocomplete.component.css"
+}

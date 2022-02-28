@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "contacts-grid.component.scss"
+    ],
+    "names": [],
+    "file": "contacts-grid.component.css"
+}

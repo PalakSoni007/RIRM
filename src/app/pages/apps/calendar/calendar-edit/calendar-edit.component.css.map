@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "calendar-edit.component.scss"
+    ],
+    "names": [],
+    "file": "calendar-edit.component.css"
+}

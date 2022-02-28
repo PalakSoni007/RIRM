@@ -1,0 +1,62 @@
+::ng-deep vex-documentation vex-page-layout-content showdown a {
+  @apply text-primary-500;
+}
+
+::ng-deep vex-documentation vex-page-layout-content showdown > *:first-child {
+  margin-top: 0 !important;
+}
+
+::ng-deep vex-documentation vex-page-layout-content h1, ::ng-deep vex-documentation vex-page-layout-content h2 {
+  border-bottom: 1px solid var(--foreground-divider);
+  padding-bottom: .3em;
+}
+
+::ng-deep vex-documentation vex-page-layout-content h1, ::ng-deep vex-documentation vex-page-layout-content h2, ::ng-deep vex-documentation vex-page-layout-content h3, ::ng-deep vex-documentation vex-page-layout-content h4, ::ng-deep vex-documentation vex-page-layout-content h5, ::ng-deep vex-documentation vex-page-layout-content h6 {
+  font-weight: var(--font-weight-medium) !important;
+  margin-bottom: var(--padding-16);
+  margin-top: 32px;
+}
+
+::ng-deep vex-documentation vex-page-layout-content p, ::ng-deep vex-documentation vex-page-layout-content ul, ::ng-deep vex-documentation vex-page-layout-content li {
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+  margin: 1rem 0;
+}
+
+::ng-deep vex-documentation vex-page-layout-content strong {
+  font-weight: 500;
+}
+
+::ng-deep vex-documentation vex-page-layout-content code.typescript {
+  display: block;
+}
+
+::ng-deep vex-documentation vex-page-layout-content table {
+  border: 1px solid var(--foreground-divider);
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 15px;
+}
+
+::ng-deep vex-documentation vex-page-layout-content table tr {
+  background-color: var(--background-card);
+  border-top: 1px solid var(--foreground-divider);
+}
+
+::ng-deep vex-documentation vex-page-layout-content table tr:nth-child(2n) {
+  background-color: var(--background-app-bar);
+}
+
+::ng-deep vex-documentation vex-page-layout-content table td, ::ng-deep vex-documentation vex-page-layout-content table th {
+  border-left: 1px solid var(--foreground-divider);
+  padding: var(--padding-12) var(--padding-16);
+}
+
+::ng-deep vex-documentation vex-page-layout-content table td:first-child, ::ng-deep vex-documentation vex-page-layout-content table th:first-child {
+  border-left: none;
+}
+
+::ng-deep vex-documentation vex-page-layout-content table th {
+  font-weight: var(--font-weight-medium);
+}
+/*# sourceMappingURL=documentation.component.css.map */

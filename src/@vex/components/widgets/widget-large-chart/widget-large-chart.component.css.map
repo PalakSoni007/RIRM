@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "widget-large-chart.component.scss"
+    ],
+    "names": [],
+    "file": "widget-large-chart.component.css"
+}

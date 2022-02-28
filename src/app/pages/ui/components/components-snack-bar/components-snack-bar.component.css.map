@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "components-snack-bar.component.scss"
+    ],
+    "names": [],
+    "file": "components-snack-bar.component.css"
+}

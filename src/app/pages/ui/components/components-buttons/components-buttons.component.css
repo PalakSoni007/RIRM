@@ -1,0 +1,25 @@
+.bg-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.bg-twitter {
+  background: #00aced;
+  color: white;
+}
+
+.bg-instagram {
+  background: #cd486b;
+  color: white;
+}
+
+.bg-pinterest {
+  background: #C92228;
+  color: white;
+}
+
+.bg-github {
+  background: #000;
+  color: white;
+}
+/*# sourceMappingURL=components-buttons.component.css.map */

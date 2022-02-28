@@ -1,0 +1,221 @@
+<div [@stagger]="true" class="p-gutter" vexContainer>
+
+    <div fxLayout="row">
+        <div fxFlex="auto" class="mb-5">
+            <img src="assets/img/demo/logo-dark.png" width="200">
+            <h3 class="font-medium mt-4">ENTER BECKGROUND CHECK REPORT DETAILS</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div fxFlex="auto" class="mb-5 text-right">
+            <img src="assets/img/demo/logo-dark.png" width="100" class="ml-auto">
+        </div>
+    </div>
+
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+        <div @fadeInUp class="card" fxFlex="auto">
+            <div class="px-6 py-4 border-b" fxLayout="row" fxLayoutAlign="start center">
+                <h2 class="title m-0">PERSONAL INFORMATION</h2>
+            </div>
+            <div class="px-6 py-4" fxLayout="column">
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="515px" appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>SSN</mat-label>
+                        <input matInput required>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Date of Birth</mat-label>
+                        <input (click)="formDatepickerRef.open()" (focus)="formDatepickerRef.open()"
+                            [matDatepicker]="formDatepickerRef" matInput readonly>
+                        <mat-datepicker-toggle [for]="formDatepickerRef" matSuffix></mat-datepicker-toggle>
+                        <mat-datepicker #formDatepickerRef></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Street</mat-label>
+                        <input matInput required>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>City</mat-label>
+                        <input matInput required>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>State</mat-label>
+                        <mat-select>
+                            <mat-option>New York</mat-option>
+                            <mat-option>Washington</mat-option>
+                            <mat-option>Florida</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Country</mat-label>
+                        <input matInput required>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Zip</mat-label>
+                        <input matInput required>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+        <div @fadeInUp class="card" fxFlex="auto">
+            <div class="px-6 py-4 border-b" fxLayout="row" fxLayoutAlign="start center">
+                <h2 class="title m-0">NATIONAL ADDRESS SEARCH - 7YEAR HISTORY</h2>
+            </div>
+            <div class="px-6 py-4" fxLayout="column">
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Street</mat-label>
+                        <input matInput formControlName="street">
+                    </mat-form-field>
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>City</mat-label>
+                        <input matInput formControlName="city">
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>State</mat-label>
+                        <mat-select formControlName="state">
+                            <mat-option>New York</mat-option>
+                            <mat-option>Washington</mat-option>
+                            <mat-option>Florida</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Country</mat-label>
+                        <input matInput formControlName="country">
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Zip</mat-label>
+                        <input matInput formControlName="zip">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+        <div @fadeInUp class="card" fxFlex="auto">
+            <div class="px-6 py-4 border-b" fxLayout="row" fxLayoutAlign="start center">
+                <h2 class="title m-0">CRIMINAL/CIVIL LITIGATION SEARCH - Essex County, Massachusetts</h2>
+            </div>
+            <div class="px-6 py-4" fxLayout="column">
+                <div fxLayout="column" fxLayoutGap="8px">
+                    <mat-checkbox [checked]="true">No Criminal convection from the last 9 years</mat-checkbox>
+                    <mat-checkbox [checked]="true">No Criminal convection from the last 6 years</mat-checkbox>
+                    <mat-checkbox [checked]="true">No Criminal convection from the last 3 years</mat-checkbox>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+        <div @fadeInUp class="card" fxFlex="auto">
+            <div class="px-6 py-4 border-b" fxLayout="row" fxLayoutAlign="start center">
+                <h2 class="title m-0">CRIMINAL/CIVIL LITIGATION SEARCH - Salem District Court, Massachusetts </h2>
+            </div>
+            <div class="px-6 py-4" fxLayout="column">
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Court</mat-label>
+                        <mat-select formControlName="court">
+                            <mat-option>SaLeem District Court</mat-option>
+                            <mat-option>High District Court</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>State</mat-label>
+                        <mat-select formControlName="state1">
+                            <mat-option>New York</mat-option>
+                            <mat-option>Washington</mat-option>
+                            <mat-option>Florida</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input matInput formControlName="uName">
+                    </mat-form-field>
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Date of Birth</mat-label>
+                        <input (click)="formDatepickerRef1.open()" (focus)="formDatepickerRef1.open()"
+                            [matDatepicker]="formDatepickerRef1" matInput formControlName="dob1">
+                        <mat-datepicker-toggle [for]="formDatepickerRef1" matSuffix></mat-datepicker-toggle>
+                        <mat-datepicker #formDatepickerRef1></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Case Number</mat-label>
+                        <input matInput formControlName="case">
+                    </mat-form-field>
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>File Date</mat-label>
+                        <input (click)="formDatepickerRef2.open()" (focus)="formDatepickerRef2.open()"
+                            [matDatepicker]="formDatepickerRef2" matInput formControlName="file">
+                        <mat-datepicker-toggle [for]="formDatepickerRef2" matSuffix></mat-datepicker-toggle>
+                        <mat-datepicker #formDatepickerRef2></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="250px" appearance="outline">
+                        <mat-label>Charge Forgery</mat-label>
+                        <input matInput formControlName="charge">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+        <div @fadeInUp class="card" fxFlex="auto">
+            <div class="px-6 py-4 border-b" fxLayout="row" fxLayoutAlign="start center">
+                <h2 class="title m-0">CRIMINAL/CIVIL LITIGATION SEARCH - Peabody District Court, Massachusetts</h2>
+            </div>
+            <div class="px-6 py-4" fxLayout="column">
+                <div fxLayout="column" fxLayoutGap="8px">
+                    <mat-checkbox [checked]="true">No Criminal convection from the last 9 years</mat-checkbox>
+                    <mat-checkbox [checked]="true">No Criminal convection from the last 6 years</mat-checkbox>
+                    <mat-checkbox [checked]="true">No Criminal convection from the last 3 years</mat-checkbox>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+        <div @fadeInUp class="card" fxFlex="auto">
+            <div class="px-6 py-4 border-b" fxLayout="row" fxLayoutAlign="start center">
+                <h2 class="title m-0">SEX OFFENDER RIGISTRY SEARCH : State of Massachusetts</h2>
+            </div>
+            <div class="px-6 py-4" fxLayout="column">
+                <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px" fxLayoutGap.lt-sm="0">
+                    <mat-form-field fxFlex="515px" class="mt-6" appearance="outline">
+                        <mat-label>Message</mat-label>
+                        <textarea matInput placeholder="Message Here!"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="mt-5" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="8px">
+        <button mat-button type="button">CANCEL</button>
+        <button color="primary" mat-raised-button type="button">SUBMIT</button>
+    </div>
+</div>

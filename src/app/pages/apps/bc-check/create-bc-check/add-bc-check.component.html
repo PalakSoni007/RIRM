@@ -1,0 +1,77 @@
+<form (ngSubmit)="save()" [formGroup]="add_update_form" fxFlex="400px">
+  <div fxLayout="row" fxLayoutAlign="start center" mat-dialog-title>
+    <h2 class="headline m-0" fxFlex="auto">Send Email</h2>
+    <button class="text-secondary" mat-dialog-close mat-icon-button type="button">
+      <mat-icon [icIcon]="icClose"></mat-icon>
+    </button>
+  </div>
+
+  <mat-divider class="-mx-6 text-border"></mat-divider>
+  <mat-dialog-content fxLayout="column">
+    <!-- <div class="flex flex-col sm:flex-row">
+      <mat-form-field class="flex-auto">
+        <mat-label>To</mat-label>
+        <input cdkFocusInitial formControlName="To Email" matInput>
+        <mat-icon [icIcon]="icPerson" class="mr-3" matPrefix></mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="flex flex-col sm:flex-row">
+      <mat-form-field class="flex-auto">
+        <mat-label>BCC</mat-label>
+        <input cdkFocusInitial formControlName="BCC Email" minlength = "1" maxlength = "50" matInput required>
+        <mat-error ng-message-exp = "['required', 'minlength', 'maxlength']">
+          Should be less than 50 characters.
+        </mat-error>
+        <mat-icon [icIcon]="icPerson" class="mr-3" matPrefix></mat-icon>
+      </mat-form-field>
+    </div> -->
+    <mat-form-field class="flex-auto">
+      <mat-label>TO</mat-label>
+      <input formControlName="ToEmail" minlength = "10" maxlength = "100" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" matInput required>
+      <mat-error ng-message-exp = "['required', 'minlength', 'maxlength']">
+        Should be a valid email address.
+      </mat-error>     
+      <mat-icon [icIcon]="icEmail" class="mr-3" matPrefix></mat-icon>
+    </mat-form-field>
+    <mat-form-field class="flex-auto">
+      <mat-label>BCC</mat-label>
+      <input formControlName="BCCEmail" minlength = "10" maxlength = "100" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" matInput required>
+      <mat-error ng-message-exp = "['required', 'minlength', 'maxlength']">
+        Should be a valid email address.
+      </mat-error>     
+      <mat-icon [icIcon]="icEmail" class="mr-3" matPrefix></mat-icon>
+    </mat-form-field>
+    <mat-form-field class="flex-auto">
+      <mat-label>Subject</mat-label>
+      <input cdkFocusInitial formControlName="EmailSubject" minlength = "1" maxlength = "50" matInput required>
+      <mat-error ng-message-exp = "['required', 'minlength', 'maxlength']">
+        Should be less than 50 characters.
+      </mat-error>
+      <mat-icon [icIcon]="icnote" class="mr-3" matPrefix></mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="flex-auto">
+      <mat-label>email message</mat-label>
+      <input formControlName="EmailBody" matInput>
+      <!-- <mat-icon [icIcon]="icPhone" class="mr-3" matPrefix></mat-icon> -->
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close type="button">CANCEL</button>    
+    <button [disabled]="add_update_form.status == 'INVALID'" color="primary" mat-button type="submit">SEND</button>
+    <!-- <button *ngIf="isUpdateMode()" [disabled]="add_update_form.status == 'INVALID'" color="primary" mat-button type="submit">SEND</button> -->
+  </mat-dialog-actions>
+</form>
+
+<mat-menu #settingsMenu="matMenu" xPosition="before" yPosition="below">
+  <button mat-menu-item>
+    <mat-icon [icIcon]="icPrint"></mat-icon>
+    <span>Print</span>
+  </button>
+
+  <button mat-menu-item>
+    <mat-icon [icIcon]="icDownload"></mat-icon>
+    <span>Export</span>
+  </button>
+</mat-menu>

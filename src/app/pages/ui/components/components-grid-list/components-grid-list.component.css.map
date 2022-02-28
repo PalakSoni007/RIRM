@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "components-grid-list.component.scss"
+    ],
+    "names": [],
+    "file": "components-grid-list.component.css"
+}

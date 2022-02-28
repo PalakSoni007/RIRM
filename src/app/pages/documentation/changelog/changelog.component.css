@@ -1,0 +1,66 @@
+::ng-deep vex-changelog vex-secondary-toolbar h1, ::ng-deep vex-changelog vex-secondary-toolbar h2 {
+  border: none;
+  margin: 0;
+}
+
+::ng-deep vex-changelog showdown a {
+  @apply text-primary-500;
+}
+
+::ng-deep vex-changelog showdown > *:first-child {
+  margin-top: 0 !important;
+}
+
+::ng-deep vex-changelog h1, ::ng-deep vex-changelog h2 {
+  border-bottom: 1px solid var(--foreground-divider);
+  padding-bottom: .3em;
+}
+
+::ng-deep vex-changelog h1, ::ng-deep vex-changelog h2, ::ng-deep vex-changelog h3, ::ng-deep vex-changelog h4, ::ng-deep vex-changelog h5, ::ng-deep vex-changelog h6 {
+  font-weight: var(--font-weight-medium) !important;
+  margin-bottom: var(--padding-16);
+  margin-top: 32px;
+}
+
+::ng-deep vex-changelog p, ::ng-deep vex-changelog ul, ::ng-deep vex-changelog li {
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+
+::ng-deep vex-changelog strong {
+  font-weight: 500;
+}
+
+::ng-deep vex-changelog code.typescript {
+  display: block;
+}
+
+::ng-deep vex-changelog table {
+  border: 1px solid var(--foreground-divider);
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 15px;
+}
+
+::ng-deep vex-changelog table tr {
+  background-color: var(--background-card);
+  border-top: 1px solid var(--foreground-divider);
+}
+
+::ng-deep vex-changelog table tr:nth-child(2n) {
+  background-color: var(--background-app-bar);
+}
+
+::ng-deep vex-changelog table td, ::ng-deep vex-changelog table th {
+  border-left: 1px solid var(--foreground-divider);
+  padding: var(--padding-12) var(--padding-16);
+}
+
+::ng-deep vex-changelog table td:first-child, ::ng-deep vex-changelog table th:first-child {
+  border-left: none;
+}
+
+::ng-deep vex-changelog table th {
+  font-weight: var(--font-weight-medium);
+}
+/*# sourceMappingURL=changelog.component.css.map */

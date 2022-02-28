@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,AAAA,IAAK,EAAA,AAAA,KAAC,EAAD,eAAC,AAAA,GAAyB;EACjD,aAAa,EAAE,GAAG,CAAC,KAAK,CAAC,yBAAyB;EAClD,WAAW,EAAE,GAAG,CAAC,KAAK,CAAC,yBAAyB;EAChD,YAAY,EAAE,GAAG,CAAC,KAAK,CAAC,yBAAyB;EACjD,UAAU,EAAE,IAAI;CAKjB;;AATD,AAME,oBANkB,AAAA,IAAK,EAAA,AAAA,KAAC,EAAD,eAAC,AAAA,EAMvB,cAAc,CAAC;EACd,UAAU,EAAE,GAAG,CAAC,KAAK,CAAC,yBAAyB;CAChD",
+    "sources": [
+        "help-center-getting-started.component.scss"
+    ],
+    "names": [],
+    "file": "help-center-getting-started.component.css"
+}

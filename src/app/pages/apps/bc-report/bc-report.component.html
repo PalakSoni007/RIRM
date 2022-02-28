@@ -1,0 +1,246 @@
+<div class="p-gutter container">
+    <div @fadeInUp class="card p-16">
+        <div fxLayout="row">
+            <div fxFlex="100%">
+                <img src="assets/img/demo/logo-dark.png" width="200" class="mx-auto">
+                <h3 class="font-medium mt-4 text-center">BECKGROUND CHECK REPORT</h3>
+                <!-- <div class="mt-12">
+                    <h4 class="body-2 text-secondary mt-0">RECIPIENT</h4>
+                    <h3 class="title m-0">David Smith</h3>
+                    <div class="text-secondary">
+                        <p class="m-0">712 Clarkson Ave</p>
+                        <p class="m-0">Brooklyn, NY</p>
+                        <p class="m-0">11203, USA</p>
+                    </div>
+                </div> -->
+            </div>
+            <button class="ml-0" color="primary" fxFlex="none" mat-mini-fab matTooltip="Send Email" type="button">
+                <mat-icon [icIcon]="icMail"></mat-icon>
+            </button>
+            <button class="ml-4" color="primary" fxFlex="none" mat-mini-fab matTooltip="Download PDF" type="button">
+                <mat-icon [icIcon]="icpicture_as_pdf"></mat-icon>
+            </button>
+
+            <!-- <div class="text-right body-1" fxFlex="50%" fxLayout="column" fxLayoutAlign="start end">
+          <h1 class="display-2 m-0">INVOICE</h1>
+  
+          <table class="mt-6">
+            <tbody>
+            <tr>
+              <td class="text-secondary body-2">INVOICE NO.</td>
+              <td class="text-left pl-4">2019/0592</td>
+            </tr>
+            <tr>
+              <td class="text-secondary body-2">INVOICE DATE</td>
+              <td class="text-left pl-4">10/04/2019</td>
+            </tr>
+            <tr>
+              <td class="text-secondary body-2">PROJECT NO.</td>
+              <td class="text-left pl-4">D-23-44</td>
+            </tr>
+            </tbody>
+          </table>
+  
+          <div class="mt-12">
+            <h4 class="body-2 text-secondary mt-0">COMPANY</h4>
+            <h3 class="title m-0">IceCold Tech Ltd.</h3>
+            <div class="text-secondary">
+              <p class="m-0">907 Eastern Pkwy</p>
+              <p class="m-0">Brooklyn, NY</p>
+              <p class="m-0">11213, USA</p>
+  
+              <p class="m-0 mt-3">
+                <ic-icon [icon]="icMail" class="mr-2" inline="true" size="1.25em"></ic-icon>
+                <span>hello@example.com</span>
+              </p>
+  
+              <p class="m-0">
+                <ic-icon [icon]="icPhone" class="mr-2" inline="true" size="1.25em"></ic-icon>
+                <span>+1 (961) 400-3535</span>
+              </p>
+            </div>
+          </div>
+        </div> -->
+        </div>
+        <table class="table w-full mt-12">
+            <thead>
+                <tr>
+                    <td class="body-3 font-bold bg-light py-3" colspan="5">PERSONAL INFORMATION</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-3 border-b">NAME : JHON DOE</td>
+                    <td class="py-3 border-b" colspan="2">SSN : 00-xx-5698 </td>
+                    <td class="py-3 border-b" colspan="2">DOB : 03/16/2020</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="py-3 border-b font-medium">STREET</td>
+                    <td class="py-3 border-b font-medium">CITY</td>
+                    <td class="py-3 border-b font-medium">STATE</td>
+                    <td class="py-3 border-b font-medium">ZIP</td>
+                    <td class="py-3 border-b font-medium">COUNTY</td>
+                </tr>
+                <tr>
+                    <td class="py-3 border-b">USA</td>
+                    <td class="py-3 border-b">NEW YORK </td>
+                    <td class="py-3 border-b">CA </td>
+                    <td class="py-3 border-b">002356</td>
+                    <td class="py-3 border-b">TEXAS</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table w-full mt-12">
+            <thead>
+                <tr>
+                    <td class="body-3 font-bold bg-light py-3" colspan="5">NATIONAL ADDRESS SEARCH - 7YEAR HISTORY</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-3 border-b font-medium">STREET</td>
+                    <td class="py-3 border-b font-medium">CITY</td>
+                    <td class="py-3 border-b font-medium">STATE</td>
+                    <td class="py-3 border-b font-medium">ZIP</td>
+                    <td class="py-3 border-b font-medium">COUNTY</td>
+                </tr>
+                <tr>
+                    <td class="py-3 border-b">SOUTH STREET 2056</td>
+                    <td class="py-3 border-b">NEW YORK </td>
+                    <td class="py-3 border-b">CA </td>
+                    <td class="py-3 border-b">002356</td>
+                    <td class="py-3 border-b">TEXAS</td>
+                </tr>
+                <tr>
+                    <td class="py-3 border-b">SOUTH STREET 2056</td>
+                    <td class="py-3 border-b">NEW YORK </td>
+                    <td class="py-3 border-b">CA </td>
+                    <td class="py-3 border-b">002356</td>
+                    <td class="py-3 border-b">TEXAS</td>
+                </tr>
+                <tr>
+                    <td class="py-3 border-b">SOUTH STREET 2056</td>
+                    <td class="py-3 border-b">NEW YORK </td>
+                    <td class="py-3 border-b">CA </td>
+                    <td class="py-3 border-b">002356</td>
+                    <td class="py-3 border-b">TEXAS</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table w-full mt-12">
+            <thead>
+                <tr>
+                    <td class="body-3 font-bold bg-light py-3">CRIMINAL/CIVIL LITIGATION SEARCH - Essex County,
+                        Massachusetts</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-3 border-b font-secondary">No Criminal convection from the last 7 years</td>
+                </tr>
+                <tr>
+                    <td class="py-3 border-b font-secondary">No Criminal convection from the last 7 years</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table w-full mt-12">
+            <thead>
+                <tr>
+                    <td class="body-3 font-bold bg-light py-3" colspan="2">CRIMINAL/CIVIL LITIGATION SEARCH - Salem
+                        District Court, Massachusetts
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-3 border-b font-secondary">Court: Salem District Court</td>
+                    <td class="py-3 border-b font-secondary">State: Massachusetts</td>
+                </tr>
+                <tr>
+                    <td class="py-3 border-b font-secondary">Jhon Doe</td>
+                    <td class="py-3 border-b font-secondary">DOB : 03/16/2020</td>
+                </tr>
+                <tr>
+                    <td class="py-3 border-b font-secondary">Case Number : 07-8569</td>
+                    <td class="py-3 border-b font-secondary">File Date : 03/16/2020</td>
+                </tr>
+                <tr>
+                    <td class="py-3 border-b font-secondary">Charge Forgery, 267-1</td>
+                    <td class="py-3 border-b font-secondary"></td>
+                </tr>
+                <tr>
+                    <td class="py-3 border-b font-secondary" colspan="2">DISPOSITION : 03/16/2020 Lorem Ipsum is simply
+                        dummy text of the printing and typesetting industry.</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table w-full mt-12">
+            <thead>
+                <tr>
+                    <td class="body-3 font-bold bg-light py-3">CRIMINAL/CIVIL LITIGATION SEARCH - Peabody District
+                        Court,
+                        Massachusetts</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-3 border-b font-secondary">No Criminal convection from the last 7 years</td>
+                </tr>
+                <tr>
+                    <td class="py-3 border-b font-secondary">No Criminal convection from the last 7 years</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table w-full mt-12">
+            <thead>
+                <tr>
+                    <td class="body-3 font-bold bg-light py-3">SEX OFFENDER RIGISTRY SEARCH : State of Massachusetts
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-3 border-b font-secondary">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <div class="mt-8" fxLayout="column" fxLayoutAlign="start end">
+            <table class="subheading-2 font-medium pr-6">
+                <tbody>
+                    <tr>
+                        <td class="text-secondary text-right">SUBTOTAL</td>
+                        <td class="pl-12">$2,299.94‬</td>
+                    </tr>
+                    <tr>
+                        <td class="text-secondary text-right">TAX (19%)</td>
+                        <td class="pl-12">$436.99‬</td>
+                    </tr>
+                    <tr>
+                        <td class="text-secondary text-right">DISCOUNT (5%)</td>
+                        <td class="pl-12">-$114.99‬</td>
+                    </tr>
+                    <tr>
+                        <td class="headline font-medium text-right pt-6">TOTAL</td>
+                        <td class="headline font-medium pl-12 pt-6">$2,621.94‬</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+    </div>
+</div>

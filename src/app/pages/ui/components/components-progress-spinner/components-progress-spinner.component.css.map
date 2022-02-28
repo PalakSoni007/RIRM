@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "components-progress-spinner.component.scss"
+    ],
+    "names": [],
+    "file": "components-progress-spinner.component.css"
+}

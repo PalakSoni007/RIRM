@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "components-radio.component.scss"
+    ],
+    "names": [],
+    "file": "components-radio.component.css"
+}

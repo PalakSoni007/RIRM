@@ -1,0 +1,12 @@
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  border-bottom: 1px solid var(--foreground-divider);
+  border-left: 1px solid var(--foreground-divider);
+  border-right: 1px solid var(--foreground-divider);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]):first-of-type {
+  border-top: 1px solid var(--foreground-divider);
+}
+/*# sourceMappingURL=help-center-getting-started.component.css.map */

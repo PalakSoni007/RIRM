@@ -1,0 +1,29 @@
+<vex-secondary-toolbar current="Dashboard">
+  <vex-breadcrumbs [crumbs]="['Dashboards']" class="flex-auto"></vex-breadcrumbs>
+  <mat-form-field appearance="standard">
+    <mat-label>Filter By Date</mat-label>
+    <mat-select>
+      <mat-option>Last Year</mat-option>
+      <mat-option>Last Month</mat-option>
+      <mat-option>Last Week</mat-option>
+    </mat-select>
+  </mat-form-field>
+</vex-secondary-toolbar>
+
+<div class="p-gutter" gdColumns="1fr 1fr 1fr 1fr" gdColumns.lt-md="1fr 1fr" gdColumns.lt-sm="1fr" gdGap="16px"
+  vexContainer>
+
+  <vex-widget-quick-value-center [change]="124.4" [icon]="icbusiness" [color]="theme.colors.primary" gdColumn.lt-sm="1"
+    label="No. of Sites " value="2000"></vex-widget-quick-value-center>
+  <vex-widget-quick-value-center [change]="-23.7" [icon]="icattach_money" [color]="theme.colors.green" gdColumn.lt-sm="1"
+    helpText="Additional information" label=" No. of Check Ins" value="530"></vex-widget-quick-value-center>
+  <vex-widget-quick-value-center [change]="23.2" [icon]="icassignment" [color]="theme.colors.teal"
+    gdColumn.lt-sm="1" helpText="Explain something" label="No. Of CheckIn Location" value="200">
+  </vex-widget-quick-value-center>
+  <vex-widget-quick-value-center [change]="-34.5" [icon]="icPageView" [color]="theme.colors.red" gdColumn.lt-sm="1"
+    label="No. of Users " value="120"></vex-widget-quick-value-center>
+
+  <vex-widget-large-goal-chart [series]="salesSeries" gdColumn="1 / -1" gdColumn.lt-sm="1" total="4,374">
+  </vex-widget-large-goal-chart>
+
+</div>

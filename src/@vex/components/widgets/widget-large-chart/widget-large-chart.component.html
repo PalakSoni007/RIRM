@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="border-b py-4 px-6" fxLayout="row" fxLayoutAlign="start center">
+    <h2 class="m-0 title" fxFlex="auto">User & Session Analytics</h2>
+
+    <button mat-icon-button type="button">
+      <mat-icon [icIcon]="icCloudDownload" class="text-secondary"></mat-icon>
+    </button>
+
+    <button mat-icon-button type="button">
+      <mat-icon [icIcon]="icMoreHoriz" class="text-secondary"></mat-icon>
+    </button>
+  </div>
+
+  <div class="pt-3 pb-1 pr-6">
+    <vex-chart [options]="options" [series]="series"></vex-chart>
+  </div>
+  <!-- <div class="pt-3 pb-1 pr-6">
+    <div fxFlex="50%" class="mt-6" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
+      <div 
+           class="w-8 h-8 rounded"
+           fxFlex="none"
+           fxLayout="row"
+           fxLayoutAlign="center center">
+        <ic-icon [icon]="faCaretUp" height="20px" inline="true" width="20px"></ic-icon>
+      </div>
+      <p class="text-secondary m-0"><span class="font-medium text-green-500">11% </span> Cleared Background Check</p>
+    </div>
+
+    <div fxFlex="50%" fxFlexOffset="48px">
+      <vex-chart [options]="options" [series]="series"></vex-chart>
+    </div>
+  </div> -->
+</div>

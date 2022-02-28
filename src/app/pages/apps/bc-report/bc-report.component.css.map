@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,CAAC,KAAK;EACR,AAAA,SAAS,CAAC;IACR,OAAO,EAAE,YAAY;GACtB;EAED,AAAA,KAAK,CAAC;IACJ,UAAU,EAAE,eAAe;GAC5B;;;AAIH,AACE,MADI,CACJ,EAAE,CAAC;EACD,YAAY,EAAE,cAAc;EAC5B,aAAa,EAAE,cAAc;CAC9B;;AAGH,AAAA,SAAS,CAAA;EACP,UAAU,EAAE,OAAO;CACpB",
+    "sources": [
+        "bc-report.component.scss"
+    ],
+    "names": [],
+    "file": "bc-report.component.css"
+}

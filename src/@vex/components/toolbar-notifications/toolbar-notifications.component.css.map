@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEE,OAFK,AAEJ,OAAO,CAAC;EACP,UAAU,EAAE,uBAAuB;CACpC;;AAJH,AAME,OANK,CAML,SAAS,CAAC;EACR,KAAK,EAAE,yBAAyB;CACjC",
+    "sources": [
+        "toolbar-notifications.component.scss"
+    ],
+    "names": [],
+    "file": "toolbar-notifications.component.css"
+}

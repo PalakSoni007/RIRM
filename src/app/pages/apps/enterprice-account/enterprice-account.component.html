@@ -1,0 +1,170 @@
+<vex-secondary-toolbar current="Enterprice Account">
+    <vex-breadcrumbs [crumbs]="['Enterprice Account', 'Create Enterprice Account']" fxFlex="auto"></vex-breadcrumbs>
+</vex-secondary-toolbar>
+
+<div @stagger class="p-gutter" vexContainer>
+
+    <h2 class="title mb-4" fxLayout="row" fxLayoutAlign="start center">
+        <span @scaleIn [style.background-color]="theme.colors.primary['500'] | colorFade:0.9"
+            class="w-10 h-10 rounded-full text-primary-500 mr-3 flex items-center justify-center">
+            <ic-icon [icon]="icDescription" height="20px" width="20px"></ic-icon>
+        </span>
+        <span @fadeInRight class="block">Create Enterprice Account</span>
+    </h2>
+
+    <div @fadeInUp class="card overflow-hidden">
+        <mat-horizontal-stepper #stepper="matHorizontalStepper" [linear]="false">
+            <ng-template matStepperIcon="edit">
+                <mat-icon [icIcon]="icDoneAll"></mat-icon>
+            </ng-template>
+
+            <ng-template matStepperIcon="done">
+                <mat-icon [icIcon]="icDoneAll"></mat-icon>
+            </ng-template>
+
+            <mat-step [stepControl]="accountFormGroup">
+                <form [formGroup]="accountFormGroup">
+                    <ng-template matStepLabel>Add Credit</ng-template>
+
+                    <div class="mt-4" fxLayout="column" gdgap="16px">
+                        <div @stagger class="pb-4" fxLayout="column" fxLayoutGap="16px">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <div @fadeInRight fxFlex="20">
+                                    <h4 class="body-2 m-0 leading-snug">Buy Credit 1</h4>
+                                </div>
+                                <div @fadeInRight fxFlex="20">
+                                    <h4 class="body-2 m-0 leading-snug">00.00</h4>
+                                </div>
+                                100.00
+                            </div>
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <div @fadeInRight fxFlex="20">
+                                    <h4 class="body-2 m-0 leading-snug">Buy Credit 2</h4>
+                                </div>
+                                <div @fadeInRight fxFlex="20">
+                                    <h4 class="body-2 m-0 leading-snug">00.00</h4>
+                                </div>
+                                200.00
+                            </div>
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <div @fadeInRight fxFlex="20">
+                                    <h4 class="body-2 m-0 leading-snug">Buy Credit 3</h4>
+                                </div>
+                                <div @fadeInRight fxFlex="20">
+                                    <h4 class="body-2 m-0 leading-snug">00.00</h4>
+                                </div>
+                                300.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="8px">
+                        <button (click)="stepper.reset()" [disabled]="accountFormGroup.pristine" color="primary"
+                            mat-button type="button">RESET
+                        </button>
+                        <button color="primary" mat-raised-button matStepperNext>PROCEED TO PAY
+                        </button>
+                    </div>
+                </form>
+            </mat-step>
+
+            <mat-step [stepControl]="passwordFormGroup">
+                <form [formGroup]="passwordFormGroup">
+                    <ng-template matStepLabel>Promo Code</ng-template>
+                    <div class="mt-4" fxLayout="row" fxLayoutGap="15px">
+                        <mat-form-field fxFlex="20" appearance="outline">
+                            <mat-label>Promo Code</mat-label>
+                            <input [type]="textInputType" formControlName="password" matInput>
+                        </mat-form-field>
+                        <button color="primary" mat-raised-button type="button" fxFlexAlign="start"
+                            class="mt-3">APPLY</button>
+                    </div>
+
+                    <div class="actions" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="8px">
+                        <button color="primary" mat-button matStepperPrevious type="button">PREVIOUS</button>
+                        <button color="primary" mat-button matStepperPrevious type="button">SKIP</button>
+                        <button color="primary" mat-raised-button matStepperNext>PROCEED TO PAY
+                        </button>
+                    </div>
+                </form>
+            </mat-step>
+
+            <mat-step [stepControl]="confirmFormGroup">
+                <form [formGroup]="confirmFormGroup">
+                    <ng-template matStepLabel>Payment Method Transaction</ng-template>
+
+                    <div class="title m-0">Select an Option to Pay</div>
+
+                    <div class="mt-4" fxLayout="column">
+                        <mat-radio-group fxLayout="column" fxLayoutGap="8px">
+                            <mat-radio-button [checked]="true" value="Credit Card" class="mb-3">Credit Card
+                                <p fxLayout="row" fxLayoutAlign="center">
+                                    <mat-icon [icIcon]="iccredit_card" class="mr-2"></mat-icon> XXX XXX XXX 236
+                                </p>
+                            </mat-radio-button>
+
+                            <div class="w-full border-b">
+                                <div class="mt-4" fxLayout="row" fxLayoutGap="20px">
+                                    <mat-form-field fxFlex="35" appearance="outline">
+                                        <mat-label>Card Number</mat-label>
+                                        <input [type]="textInputType" matInput>
+                                    </mat-form-field>
+                                </div>
+                                <div fxLayout="row" fxLayoutGap="20px">
+                                    <mat-form-field appearance="outline" fxFlex="16.5">
+                                        <mat-label>Month</mat-label>
+                                        <mat-select>
+                                            <mat-option>1</mat-option>
+                                            <mat-option>2</mat-option>
+                                            <mat-option>3</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline" fxFlex="16.5">
+                                        <mat-label>Year</mat-label>
+                                        <mat-select>
+                                            <mat-option>2020</mat-option>
+                                            <mat-option>2019</mat-option>
+                                            <mat-option>2018</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div fxLayout="row" fxLayoutGap="20px">
+                                    <mat-form-field appearance="outline" fxFlex="16.5">
+                                        <mat-label>CVV</mat-label>
+                                        <input [type]="textInputType" matInput>
+                                    </mat-form-field>
+                                </div>
+                                <div fxLayout="row">
+                                    <button color="primary" mat-raised-button type="button" class="mb-5"
+                                        fxFlex="35">PROCEED</button>
+                                </div>
+                            </div>
+
+                            <div class="w-full border-b">
+                            <mat-radio-button [checked]="" value="Debit Card" class="mb-3">Debit Card
+                                <p fxLayout="row" fxLayoutAlign="center">
+                                    <mat-icon [icIcon]="iccredit_card" class="mr-2"></mat-icon> XXX XXX XXX 236
+                                </p>
+                            </mat-radio-button>
+                            </div>
+                            <div class="w-full border-b">
+                            <mat-radio-button [checked]="" value="Net Banking" class="mb-3">Net Banking
+                            </mat-radio-button>
+                            </div>
+
+                            <button color="primary" fxFlex="none" mat-mini-fab matTooltip="Add Account" type="button">
+                                <mat-icon [icIcon]="icAdd"></mat-icon>
+                            </button>
+                        </mat-radio-group>
+                    </div>
+
+                    <div class="actions" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="8px">
+                        <!-- <button color="primary" mat-button matStepperPrevious type="button">PREVIOUS</button> -->
+                        <button color="primary" routerLink="/apps/ep-account-list" mat-raised-button>
+                            Proceed to pay
+                        </button>
+                    </div>
+                </form>
+            </mat-step>
+        </mat-horizontal-stepper>
+    </div>
+</div>

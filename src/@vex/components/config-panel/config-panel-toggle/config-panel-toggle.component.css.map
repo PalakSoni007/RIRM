@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACnB,MAAM,EAAE,cAAc;EACtB,QAAQ,EAAE,KAAK;EACf,KAAK,EAAE,cAAc;EACrB,OAAO,EAAE,GAAG;CACb;;AAED,AAAA,SAAS,EAAC,AAAA,GAAC,CAAI,KAAK,AAAT,EAAW,oBAAoB,CAAC;EACzC,IAAI,EAAE,cAAc;EACpB,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "config-panel-toggle.component.scss"
+    ],
+    "names": [],
+    "file": "config-panel-toggle.component.css"
+}
